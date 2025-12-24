@@ -430,7 +430,7 @@
                 photoMeshes.forEach(m => { m.scale.lerp(new THREE.Vector3(0,0,0), 0.1); m.visible = false; });
 
             } else if (state === 'HEART') {
-                titleMesh.visible = false; starMesh.visible = false; loveMesh.visible = true;
+                titleMesh.visible = false; starMesh.visible = false; loveMesh.visible = false;
                 photoMeshes.forEach(m => { m.visible = false; });
                 const s = 1 + Math.abs(Math.sin(time*3))*0.1;
                 loveMesh.scale.set(s,s,1);
